@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/hep.png">
+	<link rel="icon" type="image/png" href="assets/img/hep.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>HEP.ai</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+<style type="text/css">
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 60%;
+    border: 1px solid #333333;
+    width: 60px;
+    float: left;
+}
+
+.logo-container .brand{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 18px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 18px;
+    width: 70px;
+    height: 40px;
+    text-align: left;
+}
+.logo-container .brand-material{
+    font-size: 18px;
+    margin-top: 15px;
+    height: 25px;
+    width: auto;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+.navbar-small .logo-container .brand{
+    color: #333333;
+}
+
+.header-23-sub {
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  position: relative;
+  padding-top: 360px;
+  padding-bottom: 270px;
+  color: white;
+  text-align: center;
+  background: cadetblue;
+}
+.header-23-sub .background {
+  background-image: url('../assets/img/img-video.jpg');
+}
+@media (max-width: 991px) {
+  .header-23-sub {
+    padding-top: 260px;
+    padding-bottom: 170px;
+  }
+}
+.header-23-sub #bgVideo {
+  overflow: hidden;
+}
+.header-23-sub #bgVideo > video {
+  position: absolute !important;
+  top: 0 !important;
+}
+.header-23-sub .hero-unit {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.header-23-sub .hero-unit strong {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+@media (max-width: 991px) {
+  .header-23-sub .hero-unit strong {
+    display: block;
+  }
+}
+.header-23-sub .hero-unit span {
+  font-weight: 300;
+}
+@media (max-width: 991px) {
+  .header-23-sub .hero-unit span {
+    display: block;
+  }
+}
+.fplay {
+  display: inline-block;
+  text-indent: -9999px;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 67px;
+  height: 67px;
+  margin: 0 50px;
+  background: url("assets/img/btn-play.png") no-repeat;
+}
+@media (max-width: 991px) {
+  .fplay {
+    margin: 35px 0;
+  }
+}
+.header-23-sub .background {
+  opacity: 50;
+  filter: alpha(opacity=1000);
+  opacity: 0.5;
+  filter: alpha(opacity=10);
+}
+.mask {
+  z-index: 1000;
+  background-color: #000000;
+  opacity: 90;
+  filter: alpha(opacity=9000);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.popup-video {
+  z-index: 1000;
+  margin: 0 10%;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.popup-video > * {
+  width: 100%;
+  height: 100%;
+}
+.panel-heading {
+  padding: 2% 3%;
+}
+
+.panel-title a {
+  font-size: 1.5em;
+  color: #343e48;
+}
+
+.panel-group .panel {
+  margin-bottom: 2%;
+}
+.panel-body {
+  font-size: 16px;
+
+}
+.navbar .navbar-nav > li > a.btn:hover {
+   background-color: blue
+}
+</style>
+</head>
+
+<body class="landing-page">
+
+     <nav class="navbar navbar-info navbar-fixed-top navbar-color-on-scroll navbar-transparent ">
+    	<div class="container">
+        	<!-- Brand and toggle get grouped for better mobile display -->
+        	<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+            		<span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+        		</button>
+        	
+        		 <a href="#">
+           <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/img/heplogo.jpg" alt="Hep.ai" >
+                </div>
+                <div class="brand">
+                  <b>  HEP.ai</b>
+                </div>
+            </div>
+      </a>
+        	
+        		</div>
+        
+        	<div class="collapse navbar-collapse" id="navigation-example">
+        		<ul class="nav navbar-nav navbar-right">
+                 <li>
+            <a href="#features" >
+                <i class="material-icons">dashboard</i>Features
+            </a>
+            </li>
+    			    <li>
+            <a href="#faq" >
+              <i class="fa fa-info"></i>Faq
+            </a>
+            </li>
+           
+		            <li>
+		                <a href="https://www.facebook.com/nipekhep" rel="tooltip" title="Follow us on Facebook" data-placement="bottom"  target="_blank" class="btn btn-simple btn-white btn-just-icon">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+		            </li>
+					 <li><a href="https://m.me/nipekhep" class="btn btn-info btn-nav" style="border-radius:30px"><img src="assets/img/messenger.png" width="25"> GET STARTED</a></li>
+        		</ul>
+        	</div>
+    	</div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="header header-filter"  style="background-image: url('assets/img/land.jpeg');">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-6">
+						<h1 class="title">Personal Help For Your Everyday Life.</h1>
+	                    <h4>Hep will assit you in your everyday life. Hep bot can tell if you will late to your appointment or not, Hep can also give information about the weather and give definitions to terms you dont know. <blockquote>This is just the beginning</blockquote></h4>
+	                    <br />
+	                    <a href="#video" class="btn btn-danger btn-raised btn-lg">
+							<i class="fa fa-play"></i> Watch video
+						</a> <a href="#" class="btn btn-info btn-raised btn-lg">
+							 Get Started
+						</a>
+					</div>
+          <div class="col-md-6 ">
+          
+             <img src="assets/img/head.png"  class="img-rounded img-responsive hidden-sm hidden-xs" height="400" style="margin-left:250px;">
+          </div>
+                </div>
+            </div>
+        </div>
+        		<div class="main main-raised">
+			<div class="container">
+		    	<div class="section text-center section-landing" id="features">
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <h2 class="title">Hep.ai</h2>
+	                        <h5 class="description">Get predicted time based on the traffic best guess, check wether information and look up defintion and examples of terms you do not know of. Very soon users will be able to get direction from their current location to their destition, meaning the bot could take you to work, home, school, church e.t.c. Hep.ai do not store your data for promotion reason or any other reasons, our service is <b>FREE</b>.</h5>
+	                    </div>
+	                </div>
+
+					<div class="features">
+						<div class="row">
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-danger">
+									<i class="fa fa-clock-o"></i>
+									</div>
+									<h4 class="info-title">Late?</h4>
+                  
+									<p>The bot can calculate if you will be late or not from your current location to your destination. You will be late if the time to get to your particular destination calculated by the bot is greater than the inputted time you wish to get there.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-warning">
+									<i class="fa fa-sun-o"></i>
+									</div>
+									<h4 class="info-title">Weather Forecast</h4>
+									<p>Hep.ai can provide weather forecast for any location with a 5 hours interval between the forecasts.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-default">
+									<i class="fa fa-book"></i>
+									</div>
+									<h4 class="info-title">Definitions</h4>
+									<p>Input any tern your do not know of and Hep will assist you ni get definition along with associated example suitable for the given definition.</p>
+								</div>
+		                    </div>
+		                </div>
+					</div>
+	            </div>
+
+    </div>
+
+  <div class="l-section faq " id="faq" style="background-color: rgba(68, 191, 247, 0.46);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="    margin-bottom: 50px;">
+          <h1 class="text-white text-center" style="padding-top:65px;padding-bottom:15px">Frequently asked question</h1>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel" >
+              <div class="panel-heading" style="background-color:rgba(140, 179, 166, 0.73);" role="tab" id="headingOne">
+                <h3 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne"><i class="fa fa-caret-right" aria-hidden="true"></i> Does it store my private data?</a>
+                </h3>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                 We do not store your data in any form. Any information inputted is just used on the platform. view our <a href="privacypolicy.html" target="_blank">Privacy policy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel ">
+              <div class="panel-heading" style="background-color:rgba(140, 179, 166, 0.73);" role="tab" id="headingTwo">
+                <h3 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseTwo"><i class="fa fa-caret-right" aria-hidden="true"></i>  Do i have to pay for any service?</a>
+                </h3>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    Hep.ai is completely free and a non-profit bot. We do not ask for any payment in any form nor is it required.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel ">
+              <div class="panel-heading" style="background-color:rgba(140, 179, 166, 0.73);" role="tab" id="headingThree">
+                <h3 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseThree"><i class="fa fa-caret-right" aria-hidden="true"></i> Do i have to sign up or provided any information before i get access to the bot</a>
+                </h3>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body" style="margin-bottom:50px">
+                  No signup or Login details is required for you to have access to the bot. You just need to click on the get started button or scan the code
+                </div>
+              </div>
+            </div>
+
+           
+
+          </div>
+          <!-- End of accordion -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of FAQ -->
+
+
+<section class="header-23-sub " id="video">
+    <div id="bgVideo" class="background"><video id="video_background" preload="auto" autoplay="autoplay" loop="loop" style="position: fixed; top: -198px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 1349px; height: 758.813px;"><source src="assets/video/preview.mp4" type="video/mp4"><source src="assets/video/preview.ogg" type="video/ogg"><source src="assets/video/preview.webm" type="video/webm">bgvideo</video>&nbsp;</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="hero-unit">
+                    <strong>HEP.ai</strong>
+                    <a  class="fplay" id="play"  ></a>
+                    <span>Help At Your Fingertips</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="l-section gray-bg text-center" style="background-image:url(assets/img/hepback.png);margin-top:42px">
+    <div class="container">
+      <div class="row">
+           <h1 class="text-info text-margin-bottom-x" style="margin-top:50px">Ready to <b >CHAT</b> now?</h1>
+          <p>Chat with HEP on facebook messenger NOW.</p>
+        <div class="col-md-6" style="margin-top:100px;">
+       
+          <a href="https://m.me/nipekhep" class="btn btn-default btn-lg t-margin-bt-6x"><img src="assets/img/messenger.png" width="50"> GET STARTED</a>
+          <ul class="social-link inline t-margin-bt-1x">
+            <li><a href="https://www.facebook.com/nipekhep" class="fb"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
+           
+          </ul>
+         
+        </div>
+         <div class="col-md-6">
+          <img src="assets/img/hepcode1.png"  class="img-rounded img-responsive" height="300" style="margin-left:100px">
+          
+        </div>
+         <p class=" text-muted"><strong>© Hep.ai</strong><h5><a href="privacypolicy.html" target="_blank" style="color:blue">Privacy policy</a></h5></p>
+         </div>
+    </div>
+  </footer>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+ 
+</html>
